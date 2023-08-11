@@ -1,0 +1,23 @@
+@font-face {
+    font-family: 'DuffyScriptRegular';
+    src: url('fonts/DuffyScript_Regular.otf') format('opentype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'DuffyScriptBold';
+    src: url('fonts/DuffyScript_Bold.otf') format('opentype');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'DuffyScriptDemiBold';
+    src: url('fonts/DuffyScript_DemiBold.otf') format('opentype');
+    font-weight: 600; /* You can adjust the font-weight value as needed */
+}
+
+@font-face {
+    font-family: 'DuffyScriptExtraBold';
+    src: url('fonts/DuffyScript_ExtraBold.otf') format('opentype');
+    font-weight: 800; /* You can adjust the font-weight value as needed */
+}
