@@ -1,69 +1,83 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-  <title>Rat Under Paper</title>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      cursor: pointer;
-      background-image: url("images/Lower splash full.jpg");
-      background-repeat: no-repeat;
-      background-size: contain;
-      background-position: center;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional design and illustration">
+    <meta name="keywords" content="Graphic Design, Illustration Services, Business Branding, Corporate Graphics, 
+              Custom Illustrations, Design Solutions, Professional Artwork, Digital Design, Print Design, Brand Illustration">
+    <title>Rat Under Paper</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            cursor: default;
+            background-image: url("images/Lower splash full.jpg");
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
 
-    #container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: flex-start;
-      height: 100vh;
-    }
+        #container {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+        }
 
-    #title {
-      text-align: center;
-      font-size: 48px;
-      margin-top: 20px;
-    }
+        #links-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 20px;
+        }
 
-    #links-container {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-top: 20px;
-    }
+        .link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 15%x;
+            height: 8vw;
+            margin: 2vw;
+        }
 
-    .link {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 15%x;
-      height: 8vw;
-      margin: 2vw;
-    }
+        .link img {
+            width: 9vw;
+            height: 9vw;
+            object-fit: contain;
+        }
 
-    /* dynamic image sizing */
-    .link img {
-      width: 9vw; /* adjust as necessary */
-      height: 9vw; /* adjust as necessary */
-      object-fit: contain; /* maintain aspect ratio */
-    }
-*/
+        a {
+            cursor: pointer;
+        }
 
-  
-  </style>
+        footer {
+            text-align: center;
+            padding: 10px 0;
+        }
+
+    </style>
 </head>
+
 <body>
-  <div id="container">
-    <div id="links-container">
-      <a class="link" href="link_colour.html"><img src="images/1 colour.jpg" alt="Colour"></a>
-      <a class="link" href="link_bw.html"><img src="images/2 bw.jpg" alt="Black and White"></a>
-      <a class="link" href="link_dog.html"><img src="images/3 dog.jpg" alt="Dog"></a>
-      <a class="link" href="link_doinkery.html"><img src="images/4 doinkery.jpg" alt="Doinkery"></a>
-      <a class="link" href="link_hi.html"><img src="images/5 hi.jpg" alt="Hi"></a>
-      <a class="link" href="link_losergirl.html"><img src="images/6 Loser.jpg" alt="Loser Girl"></a>
+    <div id="container">
+        <nav id="links-container">
+            <a class="link" href="link_colour.html"><img src="images/1 colour.jpg" alt="Colour"></a>
+            <a class="link" href="link_bw.html"><img src="images/2 bw.jpg" alt="Black and White"></a>
+            <a class="link" href="link_dog.html"><img src="images/3 dog.jpg" alt="Dog"></a>
+            <a class="link" href="link_doinkery.html"><img src="images/4 doinkery.jpg" alt="Doinkery"></a>
+            <a class="link" href="link_hi.html"><img src="images/5 hi.jpg" alt="Hi"></a>
+            <a class="link" href="link_losergirl.html"><img src="images/6 Loser.jpg" alt="Loser Girl"></a>
+        </nav>
+        <footer>
+            <p>&copy; 2023 Rat Under Paper. All rights reserved.</p>
+        </footer>
     </div>
-  </div>
 </body>
+
 </html>

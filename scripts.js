@@ -9,7 +9,7 @@ var captionText = document.getElementById('caption');
 function openModal(src) {
     modal.style.display = "block";
     modalImg.src = src;
-//    captionText.innerHTML = src;
+    // captionText.innerHTML = src;
 
     // Ensure the image fits entirely within the viewport
     modalImg.style.maxHeight = (window.innerHeight - 200) + "px";
@@ -20,8 +20,15 @@ function closeModal() {
     modal.style.display = "none";
 }
 
+// Add event listener for the close button
+var closeButton = document.querySelector('.close');
+
+if (closeButton) {
+    closeButton.addEventListener('click', closeModal);
+}
+
 // When the user presses the ESC key, close the modal
-window.addEventListener('keydown', function (event) {
+window.addEventListener('keydown', function(event) {
     if (event.key === 'Escape') {
         closeModal();
     }
